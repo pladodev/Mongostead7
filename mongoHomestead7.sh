@@ -1,7 +1,11 @@
 echo "MongoDB install  script with PHP7 & nginx [Laravel Homestead]"
 echo "By Zakaria BenBakkar, @zakhttp, zakhttp@gmail.com, @pladodev"
 
-sudo echo "alias comp='/usr/bin/php7.1 -d memory_limit=-1 /usr/local/bin/composer --ignore-platform-reqs require alcaeus/mongo-php-adapter'" >> /home/vagrant/.bash_profile
+sudo echo "alias comp='/usr/bin/php7.1 -d memory_limit=-1 /usr/local/bin/composer --ignore-platform-reqs ';"  >> /home/vagrant/.bash_profile
+sudo echo "alias sfdev='php app/console --env=dev';"  >> /home/vagrant/.bash_profile
+sudo echo "alias sfprod='php app/console --env=prod';"  >> /home/vagrant/.bash_profile
+sudo echo "alias sfcc="php app/console cache:clear";"  >> /home/vagrant/.bash_profile
+sudo echo "alias sft='bin/phpunit -c app';"  >> /home/vagrant/.bash_profile
 
 echo "Importing the public key used by the package management system";
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv EA312927;
