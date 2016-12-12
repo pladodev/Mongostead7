@@ -3,6 +3,7 @@ echo "By Zakaria BenBakkar, @zakhttp, zakhttp@gmail.com, @pladodev"
 
 echo "Install bower";
 sudo npm install bower -g
+sudo npm install uglifycss -g
 
 sudo echo "alias comp='/usr/bin/php7.1 -d memory_limit=-1 /usr/local/bin/composer --ignore-platform-reqs ';"  >> /home/vagrant/.bash_profile
 sudo echo "alias sfdev='php app/console --env=dev';"  >> /home/vagrant/.bash_profile
