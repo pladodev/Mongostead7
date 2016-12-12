@@ -29,14 +29,14 @@ sudo pear config-set php_suffix 7.1
 sudo pecl config-set php_ini /etc/php/7.1/cli/php.ini
 sudo pecl config-set php_bin /usr/bin/php7.1
 
-sudo pecl install mongodb;
+sudo pecl install mongodb-1.1.9;
 
 echo "adding the extension to your php.ini file";
 sudo echo  "extension = mongodb.so" >> /etc/php/7.1/cli/php.ini;
 sudo echo  "extension = mongodb.so" >> /etc/php/7.1/fpm/php.ini;
 
 echo "Add mongodb.service file"
-cat >/etc/systemd/system/mongodb.service <<EOL
+sudo cat >/etc/systemd/system/mongodb.service <<EOL
 [Unit]
 Description=High-performance, schema-free document-oriented database
 After=network.target
