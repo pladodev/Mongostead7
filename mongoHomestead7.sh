@@ -9,7 +9,7 @@ sudo npm install uglifyjs -g
 sudo echo "alias comp='/usr/bin/php7.1 -d memory_limit=-1 /usr/local/bin/composer --ignore-platform-reqs ';"  >> /home/vagrant/.bash_profile
 sudo echo "alias sfdev='php app/console --env=dev';"  >> /home/vagrant/.bash_profile
 sudo echo "alias sfprod='php app/console --env=prod';"  >> /home/vagrant/.bash_profile
-sudo echo "alias sfcc="php app/console cache:clear";"  >> /home/vagrant/.bash_profile
+sudo echo "alias sfcc='php app/console cache:clear';"  >> /home/vagrant/.bash_profile
 sudo echo "alias sft='bin/phpunit -c app';"  >> /home/vagrant/.bash_profile
 
 echo "Importing the public key used by the package management system";
